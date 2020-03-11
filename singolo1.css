@@ -1,0 +1,240 @@
+@font-face {
+	font-family: 'Lato';
+	src: url('assets/Lato-Black.eot');
+	src: local('☺'), url('assets/Lato-Black.woff') format('woff'), url('assets/Lato-Black.ttf') format('truetype'), url('assets/Lato-Black.svg') format('svg');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('assets/Lato-Bold.eot');
+	src: local('☺'), url('assets/Lato-Bold.woff') format('woff'), url('assets/Lato-Bold.ttf') format('truetype'), url('assets/Lato-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Lato';
+	src: url('assets/Lato-Light.eot');
+	src: local('☺'), url('assets/Lato-Light.woff') format('woff'), url('assets/Lato-Light.ttf') format('truetype'), url('assets/Lato-Light.svg') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('assets/Lato-LightItalic.eot');
+	src: local('☺'), url('assets/Lato-LightItalic.woff') format('woff'), url('assets/Lato-LightItalic.ttf') format('truetype'), url('assets/Lato-LightItalic.svg') format('svg');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('assets/Lato-Regular.eot');
+	src: local('☺'), url('assets/Lato-Regular.woff') format('woff'), url('assets/Lato-Regular.ttf') format('truetype'), url('assets/Lato-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+h1{
+	display: none;
+}
+ 
+.header{
+	width: 1020px;
+	height: 89px;
+	background-color: #2d303a;
+}
+
+.lineheader{
+	width: 1020px;
+	height: 6px;
+	background-color: #323746;
+
+}
+
+.slider{
+	width: 1020px;
+	height: 595px;
+	background-color: #f06c64;
+	display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.lineslider{
+	width: 1020px;
+	height: 5px;
+	background-color: #ea676b;
+}
+ 
+.ourservices{
+	width: 1020px;
+	height: 495px;
+	background-color: #f2f2f2;
+}
+
+.lineourservices{
+	width: 1020px;
+	height: 6px;
+	background-color: #ffffff;
+}
+
+.red{
+	color:#f06c64;	
+}
+
+.logo{
+	display: flex;
+	align-items: center;
+	padding: 40px;
+	font-family: "Lato";
+	font-weight: normal;
+	font-size: 25px;
+	line-height: 6px;
+	color: #ffffff;
+	float: left;
+	
+}
+
+.nav{
+	height: 100%;
+	font-size: 12px;
+	color: #ffffff;
+	font-family: "Lato";
+	font-weight: 300;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding-top: 5px;
+	padding-right: 40px;
+}
+
+.nav .text{
+	cursor: pointer;
+}
+
+.nav .text:hover{
+	color: #f06c64;
+}
+
+.point{
+	padding-left: 13px;
+	padding-right: 12px;
+	color:#494e62;
+	font-size: 25px;
+	padding-bottom: 4px;
+}
+
+.verticaliphone{
+	weight: 200px;		
+	padding-left: 55px;
+	padding-top: 54px;
+	/*margin: -16px;*/
+}
+
+.horizontaliphone{
+	padding-top: 175px;
+	padding-left: 72px;	
+}
+
+.leftchev
+{
+
+	padding-top: 281px;
+	padding-left: 43px;
+}
+
+.rightchev{
+
+	padding-left:55px; 
+	padding-top: 281px;
+
+}
+
+.leftchev img, .rightchev img{
+	cursor: pointer;
+ 	-moz-transition: all 0.1s ease-out;
+	-o-transition: all 0.1s ease-out;
+	-webkit-transition: all 0.1s ease-out;
+}
+
+ .leftchev img:hover, .rightchev img:hover {
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-o-transform: scale(1.2);
+}
+
+.firstourblock .head{
+	font-size: 30px;
+	line-height: 18px;
+	color: #666d89;
+	font-family: "Lato";
+ 	font-weight: 900;
+	text-align: left;
+	padding-left: 40px;
+	padding-top: 38px;
+}
+
+.firstourblock .text{
+	width: 940px;
+	height: 57px;
+	font-size: 18px;
+	line-height: 30px;
+	color: #767e9e;
+	font-family: "Lato";
+	font-weight: 300;
+	text-align: left;
+	padding-left: 41px;
+	padding-bottom: 10px;
+}
+
+.secondourblock .firstblock{
+	display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 41px;
+    padding-top: 18px;
+}
+
+.secondourblock .secondblock{
+	display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 40px;
+}
+
+ .head{
+	font-size: 18px;
+	line-height: 18px;
+	color: #666d89;
+	font-family: "Lato";
+	font-weight: 900;
+	text-align: left;
+	padding-left: 80px;
+
+
+ }
+
+ .firstblock .text, .secondblock .text{ 
+ 	width: 219px;
+	font-size: 12px;
+	line-height: 22px;
+	color: #767e9e;
+	font-family: "Lato";
+	font-weight: 400;
+	text-align: left;
+	padding-left: 80px;
+	margin-right: 20px;
+	margin-top: -10px;
+ }
+
+ .firstblock img, .secondblock img{
+ 	float: left;
+	padding-top: 20px;
+ }
+
+ 

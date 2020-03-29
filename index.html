@@ -7,42 +7,69 @@
 </head>
 <body>
 	<header>
+		<div class="headfixed">
 		<div class="header">
 			<h1>SINGOLO</h1>
 			<div class="logo">
 				SINGOLO<div class="red">*</div>
 			</div>
 			<div class="navigation">
-				<p class="text">HOME</p><p class="point"><sup>.</sup></p>
-				<p class="text">SERVICES</p><p class="point"><sup>.</sup></p>
-				<p class="text">PORTFOLIO</p><p class="point"><sup>.</sup></p>
-				<p class="text">ABOUT</p><p class="point"><sup>.</sup></p>
-				<p class="text">CONTACT</p>
+				<p class="text"><a onclik="act()" href="#home">HOME</a></p><p class="point"><sup>.</sup></p>
+				<p class="text"><a onclik="act()" href="#services">SERVICES</a></p><p class="point"><sup>.</sup></p>
+				<p class="text"><a onclik="act()" href="#portfolio">PORTFOLIO</a></p><p class="point"><sup>.</sup></p>
+				<p class="text"><a onclik="act()" href="#about">ABOUT</a></p><p class="point"><sup>.</sup></p>
+				<p class="text"><a onclik="act()" href="#contact">CONTACT</a></p>
 			</div>	    
 	  	</div>
 		<div class="lineheader">
 		</div>
-	</header>		
+	   </div>	
+	</header>	
+		
 	<main>
-		<article>
-			<div class="slider">
-				<div class="leftchev">	
-					<img src="assets/chev (1).png" alt="chev">
-				</div>
-				<div class="verticaliphone">
-					<img src="assets/Vertical.png" alt="verticaliphone">	
-				</div>
-				<div class="horizontaliphone">											
-					<img src="assets/Horizontal.png" alt="horizontaliphone">	
-				</div>
-				<div class="rightchev">
-					<img src="assets/chev.png" alt="chev">
+		<article id="home">
+			<div class="carousel-container ">
+				<div class="carousel-slides">
+					<div id="lastClone" class="slide">
+						<img src="assets/Slider.png" alt="">
+					</div>
+					<div class="slide">
+						
+						<div class="verticaliphone">
+							<img src="assets/Vertical.png" alt="verticaliphone">	
+						</div>
+						<div class="horizontaliphone">											
+							<img src="assets/Horizontal.png" alt="horizontaliphone">	
+						</div>	
+						
+					</div>
+					<div class="slide">
+						<img src="assets/Slider.png" alt="">
+					</div>
+					<div id="firstClone" class="slide">
+						
+						<div class="verticaliphone">
+							<img src="assets/Vertical.png" alt="verticaliphone">	
+						</div>
+						<div class="horizontaliphone">											
+							<img src="assets/Horizontal.png" alt="horizontaliphone">	
+						</div>
+					</div>
 				</div>	
-			</div>
+				<div class="btn-container">
+					<div class="btn" id="prev">	
+						<img src="assets/chev.svg" alt="chev">
+					</div>
+					<div class="btn" id="next">
+						<img src="assets/chev (1).svg" alt="chev">
+					</div>
+				</div>	
+			</div>	
+			<script src="script.js"></script>
 			<div class="lineslider">
-			</div>
+						</div>
 		</article>
-		<article>
+		<article id="services">
 			<div class="ourservices">
 				<div class="firstourblock">	
 					<div class="head">
@@ -157,7 +184,7 @@
 			</div>
 		</article>
 	</main>
-	<div class="secondpage">
+	<div id="portfolio" class="secondpage">
 			<div class="firstpart">
 				<div class="description">
 					<div class="title">
@@ -166,23 +193,23 @@
 					<div class="text">
 						Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
 					</div>	
-					<div class="nav">
-						<div class="menu">
+					<div class="nav" id="portf">
+						<div class="menu all" id="all">
 							<p>All</p>
 						</div>
-						<div class="menu">
+						<div class="menu" id="wd">
 							<p>Web Design</p>
 						</div>
-						<div class="menu">
+						<div class="menu graph" id="graph">
 							<p>Graphic Design</p>
 						</div>
-						<div class="menu">
+						<div class="menu art" id="art">
 							<p>Artwork</p>
 						</div>
 					</div>
 				</div>
 				<div class="gallery">
-					<div class="block">
+					<div class="block" id="imgs">
 						<div class="img">
 							<img src="assets/1.png" alt="1">
 						</div>
@@ -230,7 +257,7 @@
 		</div>
 		
 	</div>
-	<div class="lineheader"></div>
+	<div id="about" class="lineheader"></div>
 		<div class="aftersecondpart">
 			<div class="aboutus">	
 					<div class="secondpart">
@@ -329,7 +356,7 @@
 				</div>
 				<div class="lineourservices">
 			</div>
-				<div class="thirdpage">
+				<div id="contact" class="thirdpage">
 		<div class="getaquote">
 			<div class="label">
 				<p>Get a Quote</p>

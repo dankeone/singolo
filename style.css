@@ -42,33 +42,88 @@
 h1{
 	display: none;
 }
+
+a{
+	text-decoration: none;
+	color: #ffffff;
+
+}
+
+a:hover{
+	color: #f06c64;
+}
+
+ 
  
 .header{
+	margin-top: -10px;
 	width: 1020px;
 	height: 89px;
 	background-color: #2d303a;
+}
+.headfixed{
+	position: fixed;
+	z-index: 999999;
 }
 
 .lineheader{
 	width: 1020px;
 	height: 6px;
 	background-color: #323746;
+	
 
 }
 
-.slider{
+
+.carousel-slides {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.carousel-container {
+	padding-top: 85px;
+    display:block ;
+    width: 1020px;
+    height: 595px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide{
 	width: 1020px;
 	height: 595px;
 	background-color: #f06c64;
 	display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    top: 0;
+    position: absolute;
+}
+
+.slide:nth-child(1) {
+    left: 0;
+}
+
+.slide:nth-child(2) {
+    left: 100%;
+}
+
+.slide:nth-child(3) {
+    left: 200%;
+}
+
+.slide:nth-child(4) {
+    left: 300%;
 }
 
 .lineslider{
 	width: 1020px;
 	height: 5px;
 	background-color: #ea676b;
+	
 }
  
 .ourservices{
@@ -131,7 +186,7 @@ h1{
 
 .verticaliphone{
 	weight: 200px;		
-	padding-left: 55px;
+	padding-left: 113px;
 	padding-top: 54px;
 	/*margin: -16px;*/
 }
@@ -141,28 +196,47 @@ h1{
 	padding-left: 72px;	
 }
 
-.leftchev
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;	
+}
+
+.btn {
+	margin-top: -308px;
+}
+
+.btn:nth-child(1){
+	padding-left: 40px;
+}
+
+.btn:nth-child(2){
+	padding-right: 40px;
+}
+
+/*.leftchev
 {
 
-	padding-top: 281px;
+	margin-top: -300px;
 	padding-left: 43px;
+	position: absolute;
 }
 
 .rightchev{
-
+	position: absolute;
 	padding-left:55px; 
-	padding-top: 281px;
+	margin-top: -300px;
 
-}
+}*/
 
-.leftchev img, .rightchev img{
+.btn img{
 	cursor: pointer;
  	-moz-transition: all 0.1s ease-out;
 	-o-transition: all 0.1s ease-out;
 	-webkit-transition: all 0.1s ease-out;
 }
 
- .leftchev img:hover, .rightchev img:hover {
+ .btn img:hover{
 	-webkit-transform: scale(1.2);
 	-moz-transform: scale(1.2);
 	-o-transform: scale(1.2);
